@@ -5,19 +5,19 @@ It will convert a configuration object (e.g. a json file loaded with json-loader
 
 Install the loader, globalize, and cldr-data:
 
-npm install --save-dev globalize-config-loader globalize cldr-data
+    npm install --save-dev globalize-config-loader globalize cldr-data
 
 ## Usage
 
 Create a function such as this in your code:
 
-`js
+```js
 function getGlobalize(locale, callback) {
     require('globalize-config!json!./locale/config.json')(locale, function(initFn) {
         initFn(callback);
     });
 }
-`
+```
 
 `callback` will be called with a single parameter, a Globalize instance
 set to `locale` with the formatters and parsers in `config.json`.
@@ -28,4 +28,6 @@ These chunks are loaded when first needed.
 You can add `sync=true` to the loader's query string to disable code splitting,
 but note that this will compile all the locales in the configuration into the calling chunk:
 
-`require('globalize-config?sync=true!json!./locale/config.json')(locale, function(initFn) { ... });`
+```js
+require('globalize-config?sync=true!json!./locale/config.json')(locale, function(initFn) { ... });
+```
