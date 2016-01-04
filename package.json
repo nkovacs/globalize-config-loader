@@ -1,0 +1,21 @@
+{
+  "name": "globalize-config-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader for globalize-config-compiler.",
+  "main": "lib/loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "globalize-config-compiler": "^0.1.0",
+    "loader-utils": "^0.2.11"
+  },
+  "peerDependencies": {
+  },
+  "keywords": [
+    "webpack",
+    "loader"
+  ]
+}
