@@ -1,6 +1,6 @@
 {
   "name": "globalize-config-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webpack loader for globalize-config-compiler.",
   "main": "lib/loader.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "globalize-config-compiler": "^0.1.0",
+    "globalize-config-compiler": "^0.1.2",
     "loader-utils": "^0.2.11"
   },
   "peerDependencies": {
