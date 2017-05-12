@@ -13,7 +13,7 @@ Create a function such as this in your code:
 
 ```js
 function getGlobalize(locale, callback) {
-    require('globalize-config!json!./locale/config.json')(locale, function(initFn) {
+    require('globalize-config-loader!json-loader!./locale/config.json')(locale, function(initFn) {
         initFn(callback);
     });
 }
