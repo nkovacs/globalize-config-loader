@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "globalize-config-compiler": "^0.1.2",
-    "loader-utils": "^0.2.11"
+    "loader-utils": "^1.1.0"
   },
   "peerDependencies": {
   },
